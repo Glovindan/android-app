@@ -10,7 +10,7 @@ import com.example.sreda.databinding.ItemUserBinding
 /**
  * @author s.timirov
  */
-class ListAdapter : RecyclerView.Adapter<ListAdapter.ViewHolder>() {
+class   ListAdapter : RecyclerView.Adapter<ListAdapter.ViewHolder>() {
 
     var userList: List<User> = emptyList()
         set(value) {

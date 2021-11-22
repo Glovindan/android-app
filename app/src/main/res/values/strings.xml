@@ -1,6 +1,25 @@
 <resources>
     <string name="app_name">Sreda</string>
     <string name="open_list_button_name">Открыть список пользователей</string>
+    <string name="open_calc_button_name">Открыть калькулятор</string>
     <string name="load">Загрузить</string>
     <string name="input_page_number">Введите номер страницы</string>
+    <string name="delete">delete</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_6">6</string>
+    <string name="inputHint">Введите число</string>
+    <string name="dotString">.</string>
+    <string name="_0">0</string>
+    <string name="equalString">=</string>
+    <string name="plusString">+</string>
+    <string name="minusString">-</string>
+    <string name="_3">3</string>
+    <string name="_2">2</string>
+    <string name="_1">1</string>
+    <string name="multString">×</string>
+    <string name="_5">5</string>
+    <string name="_4">4</string>
+    <string name="divString">÷</string>
+    <string name="_7">7</string>
 </resources>

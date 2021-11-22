@@ -41,7 +41,7 @@ class ListActivity : BaseActivity<ListViewModel>(ListViewModel::class) {
     }
 
     private fun onLoadButtonClick() {
-        val page = binding?.editText?.text?.toString()?.toInt()
+        val page = binding?.input?.text?.toString()?.toInt()
         if (page != null) {
             viewModel.loadUsers(page)
         }

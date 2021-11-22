@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#252525"
+    tools:context=".ui.calculator.CalcActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:hint="@string/inputHint"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:autofillHints=""
+            android:inputType="none"
+            android:textIsSelectable="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/keyDelete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:orientation="horizontal"
+                tools:ignore="NestedWeights">
+
+                <Button
+                    android:id="@+id/keyDoNothing"
+                    style="@style/myButton"
+                    android:layout_weight="1"
+                    android:backgroundTint="#3A3A3A"
+                    tools:ignore="NestedWeights,SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/button"
+                    style="@style/myButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:backgroundTint="#3A3A3A"
+                    android:onClick="onDeleteClick"
+                    android:text="@string/delete"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/key7"
+                    style="@style/myButton"
+                    android:backgroundTint="#878787"
+                    android:onClick="onNumberClick"
+                    android:text="@string/_7"
+                    android:textColor="#EFEBE9" />
+
+                <Button
+                    android:id="@+id/key8"
+                    style="@style/myButton"
+                    android:backgroundTint="#878787"
+                    android:onClick="onNumberClick"
+                    android:text="@string/_8"
+                    android:textColor="#EFEBE9" />
+
+                <Button
+                    android:id="@+id/key9"
+                    style="@style/myButton"
+                    android:backgroundTint="#878787"
+                    android:onClick="onNumberClick"
+                    android:text="@string/_9"
+                    android:textColor="#EFEBE9" />
+
+                <Button
+                    android:id="@+id/keyDiv"
+                    style="@style/myButton"
+                    android:backgroundTint="#3A3A3A"
+                    android:onClick="onOperatorClick"
+                    android:text="@string/divString" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/key4"
+                    style="@style/myButton"
+                    android:backgroundTint="#878787"
+                    android:onClick="onNumberClick"
+                    android:text="@string/_4"
+                    android:textColor="#EFEBE9" />
+
+                <Button
+                    android:id="@+id/key5"
+                    style="@style/myButton"
+                    android:backgroundTint="#878787"
+                    android:onClick="onNumberClick"
+                    android:text="@string/_5"
+                    android:textColor="#EFEBE9" />
+
+                <Button
+                    android:id="@+id/key6"
+                    style="@style/myButton"
+                    android:backgroundTint="#878787"
+                    android:onClick="onNumberClick"
+                    android:text="@string/_6"
+                    android:textColor="#EFEBE9" />
+
+                <Button
+                    android:id="@+id/keyMult"
+                    style="@style/myButton"
+                    android:backgroundTint="#3A3A3A"
+                    android:onClick="onOperatorClick"
+                    android:text="@string/multString" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/key1"
+                    style="@style/myButton"
+                    android:backgroundTint="#878787"
+                    android:onClick="onNumberClick"
+                    android:text="@string/_1"
+                    android:textColor="#EFEBE9"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/key2"
+                    style="@style/myButton"
+                    android:backgroundTint="#878787"
+                    android:onClick="onNumberClick"
+                    android:text="@string/_2"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/key3"
+                    style="@style/myButton"
+                    android:backgroundTint="#878787"
+                    android:onClick="onNumberClick"
+                    android:text="@string/_3"
+                    android:textColor="#EFEBE9" />
+
+                <Button
+                    android:id="@+id/keyMinus"
+                    style="@style/myButton"
+                    android:backgroundTint="#3A3A3A"
+                    android:onClick="onOperatorClick"
+                    android:text="@string/minusString" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/keyDot"
+                    style="@style/myButton"
+                    android:backgroundTint="#878787"
+                    android:text="@string/dotString"
+                    android:textColor="#EFEBE9"
+                    android:onClick="onNumberClick" />
+
+                <Button
+                    android:id="@+id/key0"
+                    style="@style/myButton"
+                    android:backgroundTint="#878787"
+                    android:onClick="onNumberClick"
+                    android:text="@string/_0"
+                    android:textColor="#EFEBE9" />
+
+                <Button
+                    android:id="@+id/keyEqual"
+                    style="@style/myButton"
+                    android:backgroundTint="#3A3A3A"
+                    android:onClick="onEqualClick"
+                    android:text="@string/equalString" />
+
+                <Button
+                    android:id="@+id/keyPlus"
+                    style="@style/myButton"
+                    android:backgroundTint="#3A3A3A"
+                    android:text="@string/plusString"
+                    android:onClick="onOperatorClick" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
